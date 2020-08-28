@@ -1,0 +1,48 @@
+<p>mycomponent works!</p>
+
+
+<div class="d-flex justify-content-center" style="background-color: rgb(198, 241, 241);"></div>
+<form #myForm="ngForm" (ngSubmit)="setDomain(myForm)" role="form">
+        <legend style="color: darkred;"><h2>Select Domain</h2></legend>
+        <div>
+        <select ngModel name="domain" id="domain">Select 
+    
+                <a class="dropdown-item" (click)="selectDomain(domain1)" style="color:blue; " >domain</a>
+                <option value="domain1" ><h5>Domain1</h5></option>   
+                <option value="domain2" ><h5>Domain2</h5></option> 
+            </select>
+        </div>
+        <br> 
+        <div>    
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div> 
+      </form>
+     
+    
+      <div class="table-responsive" style="height: 100%; width: 100%;">
+            <table>
+            <tr>
+                <td>
+                   <div class="table-responsive"  style="height: 100%; width: 100%;">
+                    <table class="table table-bordered" style="height: 150px; width: 100%;background-color: grey" align="center">
+                      <tbody>
+                        <tr>
+                          <td><img src="" alt="" title=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>{{product1}}</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <h4> <p>{{product2}}</p> </h4> </td>
+                          </tr>
+                          <input type="checkbox" (click)="OnSelectItem(l.id)" style="text-align: center;"/>
+                      </tbody>
+                    </table>
+                  </div>   
+                </td>
+            </tr>
+            </table>
+        </div>
+ 
